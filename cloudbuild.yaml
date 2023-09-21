@@ -1,0 +1,7 @@
+steps:
+  - name: 'gcr.io/cloud-builders/terraform'
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/terraform'
+    args: ['apply']
+  - name: 'gcr.io/cloud-builders/python3'
+    args: ['trigger.py']
