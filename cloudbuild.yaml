@@ -3,6 +3,7 @@ steps:
   - id: "tf init"
     name: "hashicorp/terraform:latest"
     dir: "terraform"
+    entrypoint: 'sh'
     args:
       - -x
       - -c
@@ -11,6 +12,7 @@ steps:
   - id: "tf apply"
     name: "hashicorp/terraform:latest"
     dir: "terraform"
+    entrypoint: 'sh'
     args:
       - -x
       - -c
