@@ -1,7 +1,7 @@
 # JOB STEPS
 steps:
   - id: "tf init"
-    name: "hashicorp/terraform"
+    name: "hashicorp/terraform:latest"
     dir: "terraform"
     args:
       - -x
@@ -9,7 +9,7 @@ steps:
       - terraform init
 
   - id: "tf apply"
-    name: "hashicorp/terraform"
+    name: "hashicorp/terraform:latest"
     dir: "terraform"
     args:
       - -x
