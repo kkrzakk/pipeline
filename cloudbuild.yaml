@@ -16,4 +16,4 @@ steps:
     args:
       - -x
       - -c
-      - terraform apply 
+      - terraform apply -auto-approve
